@@ -1,12 +1,13 @@
 import "./Home.scss";
-import Header from "../../components/Header/Header";
-import Button from "../../components/Button/Button";
 import ImgScreenMockups from "../../assets/images/screen-mockups.svg";
 import ImgGrowTogether from "../../assets/images/illustration-grow-together.svg";
 import ImgFlowingConversation from "../../assets/images/illustration-flowing-conversation.svg";
 import ImgYourUsers from "../../assets/images/illustration-your-users.svg";
 import IconCommunities from "../../assets/icons/icon-communities.svg";
 import IconMessages from "../../assets/icons/icon-messages.svg";
+import Header from "../../components/Header/Header";
+import Button from "../../components/Button/Button";
+import Footer from "../../components/Footer/Footer";
 
 function Home() {
   return (
@@ -87,6 +88,7 @@ function Home() {
           boxshadow="4px 4px 5px rgb(178 181 180)"
         />
       </section>
+      <Footer />
     </>
   );
 }
