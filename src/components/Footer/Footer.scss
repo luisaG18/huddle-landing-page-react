@@ -1,5 +1,13 @@
 $desktop: 1000px;
 
+.container-footer {
+  img {
+    position: relative;
+    top: 5px;
+    width: 100%;
+  }
+}
+
 .footer {
   padding: 40px 40px;
   text-align: left;

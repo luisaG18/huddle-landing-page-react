@@ -5,10 +5,13 @@ import IconPhone from "../../assets/icons/icon-phone.svg";
 import IconFacebook from "../../assets/icons/icon-facebook.svg";
 import IconInstagram from "../../assets/icons/icon-instagram.svg";
 import IconTwitter from "../../assets/icons/icon-Twitter.svg";
+import BgFooterMobile from "../../assets/images/backgrounds/bg-footer-top-mobile.svg";
+/* import BgFooterDesktop from "../../assets/images/backgrounds/bg-footer-top-desktop.svg"; */
 
 function Footer() {
   return (
-    <>
+    <div className="container-footer">
+      <img src={BgFooterMobile} alt="Image footer" />
       <div className="footer">
         <div className="footer__newsletter">
           <h3>NEWSLETTER</h3>
@@ -44,7 +47,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
