@@ -19,6 +19,7 @@ $desktop: 1000px;
   &--diferent {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
 
   &--final {
@@ -59,6 +60,11 @@ $desktop: 1000px;
 
 @media (min-width: $desktop) {
   .container-section {
+    &--text {
+      max-width: 500px;
+      text-align: left;
+    }
+
     &--diferent {
       display: flex;
       flex-direction: row;

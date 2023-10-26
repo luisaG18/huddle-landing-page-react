@@ -17,4 +17,8 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
+span {
+  max-width: 500px;
+}
+
 
