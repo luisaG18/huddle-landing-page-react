@@ -1,8 +1,76 @@
+$desktop: 1000px;
+
 .container-section {
-  padding: 0 50px;
+  padding: 0 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   Button {
     margin-top: 40px;
+  }
+
+  img {
+    margin: 60px 0;
+    width: 80%;
+  }
+
+  &--diferent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--final {
+    margin-top: 100px;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.figures {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 80px;
+  &__i {
+    display: flex;
+    flex-direction: column;
+    img {
+      margin-left: 50px;
+      width: 35px;
+    }
+    &--span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span:first-child {
+        font-size: 80px;
+        font-weight: 800;
+      }
+      span:last-child {
+        color: hsl(192, 100%, 9%, 50%);
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .container-section {
+    &--diferent {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .figures {
+    flex-direction: row;
+    justify-content: space-around;
+    &__i {
+      img {
+        margin-left: 0;
+      }
+    }
   }
 }
