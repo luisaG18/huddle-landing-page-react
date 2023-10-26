@@ -24,7 +24,11 @@ function Home() {
           backgroundColor="hsl(322, 100%, 66%)"
           boxshadow="4px 4px 5px rgb(178 181 180)"
         />
-        <img src={ImgScreenMockups} alt="Image Screen Mockups" />
+        <img
+          className="container-section__img"
+          src={ImgScreenMockups}
+          alt="Image Screen Mockups"
+        />
       </section>
       <section className="figures">
         <div className="figures__i">
@@ -42,7 +46,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="container-section container-section--diferent">
+      <section className="container-section container-section--diferent container-section--diferent--reverse">
         <img src={ImgGrowTogether} alt="Image Screen Mockups" />
         <div className="container-section--text">
           <h1>Grow Together</h1>
@@ -64,7 +68,7 @@ function Home() {
           </span>
         </div>
       </section>
-      <section className="container-section container-section--diferent">
+      <section className="container-section container-section--diferent container-section--diferent--reverse">
         <img src={ImgYourUsers} alt="Image Screen Mockups" />
         <div className="container-section--text">
           <h1>Your Users</h1>
