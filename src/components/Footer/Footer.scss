@@ -38,6 +38,7 @@ $desktop: 1000px;
     border: none;
     padding: 15px 20px;
     width: 100%;
+    cursor: pointer;
   }
 
   &__b {
@@ -78,6 +79,10 @@ $desktop: 1000px;
     display: flex;
     width: 20px;
     gap: 20px;
+
+    img {
+      cursor: pointer;
+    }
   }
 }
 
