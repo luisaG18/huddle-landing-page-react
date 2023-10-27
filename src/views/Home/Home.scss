@@ -27,7 +27,7 @@ $desktop: 1000px;
   }
 
   &--final {
-    margin-top: 100px;
+    margin: 100px;
 
     h1 {
       margin-bottom: 0;
@@ -40,11 +40,12 @@ $desktop: 1000px;
   flex-direction: column;
   padding: 40px;
   gap: 80px;
+  align-items: center;
   &__i {
     display: flex;
     flex-direction: column;
+    max-width: 300px;
     img {
-      margin-left: 50px;
       width: 35px;
     }
     &--span {
@@ -59,6 +60,28 @@ $desktop: 1000px;
         color: hsl(192, 100%, 9%, 50%);
       }
     }
+  }
+}
+
+.img-curve {
+  img.img-top-m {
+    position: relative;
+    top: 5px;
+    width: 100%;
+  }
+
+  img.img-top-d {
+    display: none;
+  }
+
+  img.img-bottom-m {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+
+  img.img-bottom-d {
+    display: none;
   }
 }
 
@@ -90,6 +113,30 @@ $desktop: 1000px;
       img {
         margin-left: 0;
       }
+    }
+  }
+
+  .img-curve {
+    img.img-top-m {
+      display: none;
+    }
+
+    img.img-top-d {
+      display: inline;
+      position: relative;
+      top: 5px;
+      width: 100%;
+    }
+
+    img.img-bottom-m {
+      display: none;
+    }
+
+    img.img-bottom-d {
+      display: inline;
+      position: relative;
+      top: 0;
+      width: 100%;
     }
   }
 }
